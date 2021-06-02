@@ -1,0 +1,28 @@
+Iniciando um servidor com express
+- Para iniciar, será necessário instalar com o NPM ( Node program maneger ) o pagacote {Express};
+- Ao instalar, criar uma pasta SRC, para inciar o servidor, como por exemplo src/server.js;
+- Em seguida criar uma constante para chamar o pacote express, outra constante para executar a função express();
+- Iniciar o servidor em uma porta
+
+Methodos
+- São disponibilizados alguns métodos para solicitar, enviar, alterar, deletar... ;
+- Para solicitar algo e utilziado o metodo GET em uma função (req,res) {request, response} ;
+- Para dar uma resposta nesta requisição, é utilziado o res( response / Resposta);
+
+Utilizando Nodemon
+- Necessário a instação do pacote em ambinete de desenvolvimento ( npm i nodemon -D );
+- Para executar, será necessário a alteração na pasta "package.json" no objeto script e main informando qual o arquivo pricipal do projeto que será executado;
+
+Mostrando o HTML em tela em comunicação com o Back-End
+- Para melhor estrurura do projeto, criar uam pasta views, para ser armazenada todos arquivos relacionadas a visualiação em tela;
+- Será necessário utilzia o "__dirname" que se relaciona a raiz do projeto( todas as pastas que estão sendo acessadas até o arquivo ), concatenado com a view que deseja mostrar em tela;
+
+Utilizar arquivos estaticos ( não sofrem alterações constantes / Estão disponíveis ao público)
+- Utilziamos a propriedade ".use" para indicar ao express, que iremos usar a pasta na qual os arquivos estão armazenados, contendo os arquicos estaticos;
+
+Criando arquivos de rotas
+- Para ter uma aplicação dinâmica, podemos separar as rotas em outro arquivo
+- Para que estas rotas fique disponível para o meu servidor "ler", será necessário a utilização do "module.exports"
+- Após a exportação deste arquivo, será necessário importalo com o request no servidor. 
+- Para utilizar este arquivo, necessita a utilizado do ".use"
+
