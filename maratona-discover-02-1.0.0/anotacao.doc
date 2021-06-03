@@ -26,3 +26,11 @@ Criando arquivos de rotas
 - Após a exportação deste arquivo, será necessário importalo com o request no servidor. 
 - Para utilizar este arquivo, necessita a utilizado do ".use"
 
+Utilizando uma tempalte engine
+- 1 passo:
+    Será necessário informar para o meu servidor, que vou trabalhar com uma template ( neste projeto será o EJS )
+- 2 passo:
+    alterar as extensões do sarquivos em HTML para .ejs
+- utilizando este teamplate engine, é permitido criar um objeto contendo os valoresdesejados, para substituir no HTML de acordo com as variáveis criadas;
+
+
