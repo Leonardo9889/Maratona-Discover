@@ -30,7 +30,10 @@ Utilizando uma tempalte engine
 - 1 passo:
     Será necessário informar para o meu servidor, que vou trabalhar com uma template ( neste projeto será o EJS )
 - 2 passo:
-    alterar as extensões do sarquivos em HTML para .ejs
-- utilizando este teamplate engine, é permitido criar um objeto contendo os valoresdesejados, para substituir no HTML de acordo com as variáveis criadas;
+    alterar as extensões dos arquivos em HTML para .ejs
+- utilizando este teamplate engine, é permitido criar um objeto contendo os valores desses dados, para substituir no HTML de acordo com as variáveis criadas;
+
+Enviar dados usando o m[etodo POST
+- Para que possamos enviar dados do forntend para o banckend, sera necessario ter um formulario criado, contendo a rota ( action ) e o metodo utilizado ( POST )
 
 
