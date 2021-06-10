@@ -35,5 +35,10 @@ Utilizando uma tempalte engine
 
 Enviar dados usando o m[etodo POST
 - Para que possamos enviar dados do forntend para o banckend, sera necessario ter um formulario criado, contendo a rota ( action ) e o metodo utilizado ( POST )
+- Nas rotas, será encessário ter o methodo POST criado de acordo com a rota para onde esta enviando os dados.
+
+Usando o req.body
+- Para que os dados informados no frontend ficarem disponíveis no back, precisa-se habilitar a utilização
+desta requisição. ( .use(express.urlencoded(extend:true)))
 
 
