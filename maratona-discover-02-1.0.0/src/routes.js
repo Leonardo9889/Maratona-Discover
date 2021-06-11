@@ -34,7 +34,21 @@ const jobs = [
 
 routes
 //Request, Response
-.get('/', (req,res) =>res.render(views + "index", {jobs})) // Renderizando a página index
+.get('/', (req,res) => {
+    
+    const updatadJobs = jobs.map((job) => {
+        //Ajustes no job
+        // Cálculo de tempo restante
+        const remainingDays = (job["total-hours"] / job["daily-hours"]).toFixed() // Esta realizando a divisão do total de horas por dias que vai trabalhar, tendo como resultado o dia da entrega ( toFixed() transforma em um valor inteiro)
+
+        const createdDate = new Date(job.createdAt) // Recebe os milisegundos na data de criação, e transforma em uma data
+        const dueDay = createdDate.getDate() + Number(remainingDays) // Soma a data de criação com o tempo restante para a entrega, e resulta nos dias restante para a entrega
+    }) 
+
+   return res.render(views + "index", {jobs})
+}) // Renderizando a página index
+
+
 .get('/job', (req,res) =>res.render(views + "job")) // Renderizando a página job
 .post('/job', (req,res) => {
     // req.body = { name: 'fdaf', 'daily-hours': '2', 'total-hours': '4' }
